@@ -3,7 +3,7 @@
 ## Overview
 This project implements a scalable information network embedding technique, with a particular emphasis on **first-order proximity**. Inspired by the [LINE (Large-scale Information Network Embedding) paper](https://arxiv.org/pdf/1503.03578.pdf), our aim is to efficiently capture direct connections between nodes in large-scale information networks. The goal is to generate embeddings that preserve both the structural and semantic properties of the network.
 
-Here is an example of a graph and the corresponding embeddings of its nodes in a two-dimensional space:
+Here is an example of a graph and the corresponding embeddings of its nodes in a two-dimensional space using the implemented model:
 
 <div style="display: flex; justify-content: space-between;">
   <img src="example/Graph.png" alt="Graph" style="width: 48%;"/>
