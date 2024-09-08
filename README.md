@@ -3,6 +3,14 @@
 ## Overview
 This project implements a scalable information network embedding technique, with a particular emphasis on **first-order proximity**. Inspired by the [LINE (Large-scale Information Network Embedding) paper](https://arxiv.org/pdf/1503.03578.pdf), our aim is to efficiently capture direct connections between nodes in large-scale information networks. The goal is to generate embeddings that preserve both the structural and semantic properties of the network.
 
+Here is an example of a graph and the corresponding embeddings of its nodes in a two-dimensional space:
+
+<div style="display: flex; justify-content: space-between;">
+  <img src="example/Graph.png" alt="Graph" style="width: 48%;"/>
+  <img src="example/2D_embeddings.png" alt="2D Embeddings" style="width: 48%;"/>
+</div>
+
+
 ## Large-scale Information Network Embedding
 LINE is designed to learn embeddings by preserving **first-order proximity** information within a network. In the context of LINE, first-order proximity refers to the relationships between a node and its immediate neighbors. The model optimizes an objective function that balances the likelihood of preserving the proximity of connected nodes and ensuring that unrelated nodes have distinct embeddings.
 
