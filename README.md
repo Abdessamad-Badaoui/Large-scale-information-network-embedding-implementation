@@ -11,8 +11,9 @@ LINE’s focus on first-order proximity offers several advantages, particularly 
 ## Optimizations
 To optimize the model, we initially employ a **batch alias sampler** for edge sampling, a technique widely used in graph-based machine learning tasks. The alias method is a probabilistic data structure that facilitates efficient random sampling. In the case of edge sampling, it is frequently used to select edges from a graph while preserving important structural properties.
 
-Once a subset of edges is sampled, we iterate over them individually. For each edge, we draw **K negative samples** from the noise distribution 
+Once a subset of edges is sampled, we iterate over them individually. For each edge, we draw **K negative samples** from the noise distribution:
 
-For short expresions and not so fancy math you could use the inline HTML to get your latex rendered math on codecogs and then embed the resulting image. Here an example:
+![Equation](https://latex.codecogs.com/png.latex?P_n(v)%20%5Cpropto%20d_v%5E%7B3/4%7D)
 
-<img src="https://latex.codecogs.com/gif.latex?O_t=\text { P_n(v) ∝ d_v^{3/4}} " /> , where <img src="https://latex.codecogs.com/gif.latex?O_t=\text { d_v }" /> represents the degree of node v, as outlined in the original LINE paper. During each iteration, we update the embeddings for both the current node and the negative samples, optimizing the overall learning process.
+where \( d_v \) represents the degree of node \( v \), as outlined in the original LINE paper. During each iteration, we update the embeddings for both the current node and the negative samples, optimizing the overall learning process.
+
